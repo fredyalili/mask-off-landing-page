@@ -1,22 +1,29 @@
 import Image from "next/image"
 import { Users, Clock, Zap } from "lucide-react"
+import { BeehiivSignup } from "./beehiiv-signup"
 
 export function Hero() {
   return (
     <section className="relative min-h-screen pt-16 flex items-center overflow-hidden">
-      {/* Decorative background */}
+      {/* Decorative background with shape SVGs */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-32 h-32 md:w-48 md:h-48 opacity-10 dark:opacity-5">
-          <Image src="/masks/bamileke-mask.svg" alt="" fill className="object-contain" />
+        <div className="absolute top-20 left-10 w-24 h-28 md:w-36 md:h-44 opacity-20 dark:opacity-10">
+          <Image src="/shapes/shape-1.svg" alt="" fill className="object-contain" />
         </div>
-        <div className="absolute top-40 right-10 w-24 h-24 md:w-40 md:h-40 opacity-10 dark:opacity-5">
-          <Image src="/masks/kyogen-mask.svg" alt="" fill className="object-contain" />
+        <div className="absolute top-32 right-16 w-20 h-24 md:w-32 md:h-40 opacity-20 dark:opacity-10">
+          <Image src="/shapes/shape-2.svg" alt="" fill className="object-contain" />
         </div>
-        <div className="absolute bottom-20 left-1/4 w-28 h-28 md:w-36 md:h-36 opacity-10 dark:opacity-5">
-          <Image src="/masks/maori-mask.svg" alt="" fill className="object-contain" />
+        <div className="absolute bottom-40 left-1/4 w-16 h-20 md:w-28 md:h-36 opacity-20 dark:opacity-10">
+          <Image src="/shapes/shape-3.svg" alt="" fill className="object-contain" />
         </div>
-        <div className="absolute bottom-40 right-1/4 w-20 h-20 md:w-32 md:h-32 opacity-10 dark:opacity-5">
-          <Image src="/masks/tlaloc-mask.svg" alt="" fill className="object-contain" />
+        <div className="absolute bottom-20 right-1/3 w-20 h-24 md:w-32 md:h-40 opacity-20 dark:opacity-10">
+          <Image src="/shapes/shape-4.svg" alt="" fill className="object-contain" />
+        </div>
+        <div className="absolute top-1/2 left-8 w-14 h-18 md:w-24 md:h-32 opacity-15 dark:opacity-8">
+          <Image src="/shapes/shape-5.svg" alt="" fill className="object-contain" />
+        </div>
+        <div className="absolute bottom-1/3 right-10 w-18 h-22 md:w-28 md:h-36 opacity-15 dark:opacity-8">
+          <Image src="/shapes/shape-6.svg" alt="" fill className="object-contain" />
         </div>
       </div>
 
@@ -38,11 +45,7 @@ export function Hero() {
             {/* Email Signup */}
             <div className="mb-12">
               <p className="text-sm text-muted-foreground mb-3">Sign up for launch day</p>
-              <div 
-                dangerouslySetInnerHTML={{
-                  __html: `<script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="d1aa3e6e-fa4a-40b4-9120-20818346c198"></script>`
-                }}
-              />
+              <BeehiivSignup />
             </div>
 
             {/* Stats */}
@@ -81,7 +84,7 @@ export function Hero() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md lg:max-w-lg">
               <Image
-                src="/cards.png"
+                src="/cards.svg"
                 alt="Mask Off game cards fanned out showing various cultural masks"
                 width={600}
                 height={500}
