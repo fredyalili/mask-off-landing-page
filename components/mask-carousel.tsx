@@ -51,20 +51,20 @@ export function MaskCarousel() {
 
         {/* Carousel */}
         <div className="relative max-w-5xl mx-auto mb-8">
-          <div className="overflow-hidden py-4" ref={emblaRef}>
+          <div className="overflow-visible py-6" ref={emblaRef}>
             <div className="flex">
               {masks.map((mask, index) => (
                 <div
                   key={mask.id}
-                  className="flex-[0_0_50%] sm:flex-[0_0_33%] md:flex-[0_0_25%] min-w-0 px-2 md:px-4 py-2"
+                  className="flex-[0_0_50%] sm:flex-[0_0_33%] md:flex-[0_0_25%] min-w-0 px-2 md:px-4 py-4"
                 >
                   <button
                     onClick={() => emblaApi?.scrollTo(index)}
                     className={cn(
-                      "w-full aspect-[3/4] rounded-2xl p-4 md:p-6 transition-all duration-300 cursor-pointer",
+                      "w-full aspect-[3/4] rounded-2xl transition-all duration-300 cursor-pointer",
                       index === selectedIndex
-                        ? "bg-card shadow-xl scale-105 ring-2 ring-accent ring-offset-2 ring-offset-secondary/50"
-                        : "bg-card/50 hover:bg-card hover:shadow-lg"
+                        ? "bg-card shadow-2xl scale-110 ring-2 ring-accent ring-offset-4 ring-offset-secondary/50 p-3 md:p-4"
+                        : "bg-card/50 hover:bg-card hover:shadow-lg p-4 md:p-6"
                     )}
                   >
                     <div className="relative w-full h-full">
