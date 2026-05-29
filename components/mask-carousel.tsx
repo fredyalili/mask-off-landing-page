@@ -50,8 +50,8 @@ export function MaskCarousel() {
         </div>
 
         {/* Carousel */}
-        <div className="relative max-w-5xl mx-auto mb-8">
-          <div className="overflow-visible py-6" ref={emblaRef}>
+        <div className="relative max-w-5xl mx-auto mb-8 overflow-hidden">
+          <div className="overflow-visible py-6 -mx-4 px-4" ref={emblaRef}>
             <div className="flex">
               {masks.map((mask, index) => (
                 <div
