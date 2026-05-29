@@ -51,12 +51,12 @@ export function MaskCarousel() {
 
         {/* Carousel */}
         <div className="relative max-w-5xl mx-auto mb-8">
-          <div className="overflow-hidden py-6" ref={emblaRef}>
+          <div className="overflow-x-clip overflow-y-visible py-6 pb-10" ref={emblaRef}>
             <div className="flex">
               {masks.map((mask, index) => (
                 <div
                   key={mask.id}
-                  className="flex-[0_0_50%] sm:flex-[0_0_33%] md:flex-[0_0_25%] min-w-0 px-3 md:px-5 py-4"
+                  className="flex-[0_0_50%] sm:flex-[0_0_33%] md:flex-[0_0_25%] min-w-0 px-3 md:px-5 pt-4 pb-6"
                 >
                   <button
                     onClick={() => emblaApi?.scrollTo(index)}
