@@ -1,6 +1,4 @@
-import Link from "next/link"
 import Image from "next/image"
-import { Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -15,18 +13,6 @@ export function Footer() {
               height={28}
               className="h-6 w-auto dark:invert"
             />
-          </div>
-
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <Link
-              href="https://www.instagram.com/maskoffgame/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-foreground transition-colors flex items-center gap-1"
-            >
-              <Instagram className="h-4 w-4" />
-              Instagram
-            </Link>
           </div>
 
           <p className="text-sm text-muted-foreground">
