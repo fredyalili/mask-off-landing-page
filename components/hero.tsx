@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Users, Clock, Zap } from "lucide-react"
 import { BeehiivSignup } from "./beehiiv-signup"
 
