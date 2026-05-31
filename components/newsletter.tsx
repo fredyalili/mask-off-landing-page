@@ -1,7 +1,6 @@
 import { Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { BeehiivSignup } from "./beehiiv-signup"
 
 export function Newsletter() {
   return (
@@ -19,8 +18,12 @@ export function Newsletter() {
           </p>
 
           {/* Email Signup */}
-          <div className="mb-8 flex justify-center">
-            <BeehiivSignup />
+          <div className="mb-8">
+            <div 
+              dangerouslySetInnerHTML={{
+                __html: `<script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="d1aa3e6e-fa4a-40b4-9120-20818346c198"></script>`
+              }}
+            />
           </div>
 
           <div className="flex items-center justify-center gap-2 text-muted-foreground mb-4">
