@@ -77,7 +77,6 @@ export function Hero() {
           {/* Email Signup - Right Side */}
           <div className="flex justify-center lg:justify-end">
             <div className="w-full max-w-md lg:max-w-lg">
-              <p className="text-sm text-muted-foreground mb-3 text-center lg:text-left">Sign up for launch day</p>
               <BeehiivSignup />
             </div>
           </div>
