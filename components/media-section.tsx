@@ -2,7 +2,7 @@ import { Play, ImageIcon } from "lucide-react"
 
 export function MediaSection() {
   return (
-    <section className="py-24 md:py-32 bg-secondary/50">
+    <section className="pt-12 pb-24 md:pt-16 md:pb-32 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-accent font-medium text-sm uppercase tracking-widest mb-4">
