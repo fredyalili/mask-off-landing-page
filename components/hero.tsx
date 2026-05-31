@@ -4,7 +4,7 @@ import { BeehiivSignup } from "./beehiiv-signup"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen pt-16 flex items-center overflow-hidden">
+    <section className="relative min-h-screen pt-24 pb-16 md:pt-32 md:pb-24 flex items-center overflow-hidden">
       {/* Decorative background with shape SVGs */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-10 w-24 h-28 md:w-36 md:h-44 opacity-20 dark:opacity-10">
