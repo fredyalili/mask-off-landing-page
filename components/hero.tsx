@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Users, Clock, Zap } from "lucide-react"
 import { BeehiivSignup } from "./beehiiv-signup"
 
@@ -42,12 +41,6 @@ export function Hero() {
               A matching card game that feels familiar and strange.
             </p>
 
-            {/* Email Signup */}
-            <div className="mb-12">
-              <p className="text-sm text-muted-foreground mb-3">Sign up for launch day</p>
-              <BeehiivSignup />
-            </div>
-
             {/* Stats */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 md:gap-8">
               <div className="flex items-center gap-2">
@@ -80,17 +73,11 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Cards Image */}
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md lg:max-w-lg">
-              <Image
-                src="/cards.svg"
-                alt="Mask Off game cards fanned out showing various cultural masks"
-                width={600}
-                height={500}
-                className="w-full h-auto drop-shadow-2xl"
-                priority
-              />
+          {/* Email Signup - Right Side */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="w-full max-w-md lg:max-w-lg">
+              <p className="text-sm text-muted-foreground mb-3 text-center lg:text-left">Sign up for launch day</p>
+              <BeehiivSignup />
             </div>
           </div>
         </div>
