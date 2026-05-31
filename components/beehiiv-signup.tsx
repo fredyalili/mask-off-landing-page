@@ -25,5 +25,5 @@ export function BeehiivSignup() {
     }
   }, [])
 
-  return <div ref={containerRef} className="w-full max-w-md" />
+  return <div ref={containerRef} className="w-full" />
 }
