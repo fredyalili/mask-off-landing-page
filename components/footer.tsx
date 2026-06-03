@@ -11,7 +11,7 @@ export function Footer() {
               alt="Mask Off"
               width={100}
               height={28}
-              className="h-6 w-auto dark:invert"
+              className="h-6 w-auto invert"
             />
           </div>
 

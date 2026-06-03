@@ -14,7 +14,7 @@ export function Header() {
             alt="Mask Off"
             width={120}
             height={32}
-            className="h-8 w-auto dark:invert"
+            className="h-8 w-auto invert"
           />
         </Link>
         
