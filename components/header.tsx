@@ -1,6 +1,5 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ThemeToggle } from "./theme-toggle"
 import { Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -29,7 +28,6 @@ export function Header() {
               <span className="sr-only">Follow on Instagram</span>
             </Link>
           </Button>
-          <ThemeToggle />
         </nav>
       </div>
     </header>
