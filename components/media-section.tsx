@@ -1,4 +1,4 @@
-import { Play, ImageIcon } from "lucide-react"
+import { ImageIcon } from "lucide-react"
 
 export function MediaSection() {
   return (
@@ -13,16 +13,17 @@ export function MediaSection() {
           </h2>
         </div>
 
-        {/* Video Placeholder */}
+        {/* Video */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="relative aspect-video rounded-2xl bg-card overflow-hidden shadow-lg border border-border">
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-muted-foreground">
-              <div className="w-20 h-20 rounded-full bg-secondary flex items-center justify-center mb-4">
-                <Play className="h-10 w-10 text-accent ml-1" />
-              </div>
-              <p className="font-medium">Game Introduction Video</p>
-              <p className="text-sm">Coming Soon</p>
-            </div>
+          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg border border-border">
+            <iframe
+              src="https://www.youtube.com/embed/CE9XGLssx_U?si=QvKQDno4dh5lP5y1"
+              title="Mask Off Game Introduction"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            />
           </div>
         </div>
 
