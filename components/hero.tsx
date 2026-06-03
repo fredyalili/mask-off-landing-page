@@ -7,22 +7,22 @@ export function Hero() {
     <section className="relative min-h-screen pt-24 pb-16 md:pt-32 md:pb-24 flex items-center overflow-hidden">
       {/* Decorative background with shape SVGs */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-24 h-28 md:w-36 md:h-44 opacity-20">
+        <div className="absolute top-20 left-10 w-32 h-40 md:w-48 md:h-60 opacity-30">
           <Image src="/shapes/shape-1.svg" alt="" fill className="object-contain invert" />
         </div>
-        <div className="absolute top-32 right-16 w-20 h-24 md:w-32 md:h-40 opacity-20">
+        <div className="absolute top-32 right-16 w-28 h-36 md:w-44 md:h-56 opacity-30">
           <Image src="/shapes/shape-2.svg" alt="" fill className="object-contain invert" />
         </div>
-        <div className="absolute bottom-40 left-1/4 w-16 h-20 md:w-28 md:h-36 opacity-20">
+        <div className="absolute bottom-40 left-1/4 w-24 h-32 md:w-40 md:h-52 opacity-25">
           <Image src="/shapes/shape-3.svg" alt="" fill className="object-contain invert" />
         </div>
-        <div className="absolute bottom-20 right-1/3 w-20 h-24 md:w-32 md:h-40 opacity-20">
+        <div className="absolute bottom-20 right-1/3 w-28 h-36 md:w-44 md:h-56 opacity-25">
           <Image src="/shapes/shape-4.svg" alt="" fill className="object-contain invert" />
         </div>
-        <div className="absolute top-1/2 left-8 w-14 h-18 md:w-24 md:h-32 opacity-15">
+        <div className="absolute top-1/2 left-8 w-20 h-28 md:w-36 md:h-48 opacity-20">
           <Image src="/shapes/shape-5.svg" alt="" fill className="object-contain invert" />
         </div>
-        <div className="absolute bottom-1/3 right-10 w-18 h-22 md:w-28 md:h-36 opacity-15">
+        <div className="absolute bottom-1/3 right-10 w-24 h-32 md:w-40 md:h-52 opacity-20">
           <Image src="/shapes/shape-6.svg" alt="" fill className="object-contain invert" />
         </div>
       </div>
