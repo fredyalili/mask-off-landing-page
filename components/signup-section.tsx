@@ -17,8 +17,11 @@ export function SignupSection() {
 
           {/*
             Beehiiv embedded form (Name + Email).
-            NOTE: Configure Beehiiv to redirect successful signups to /maskless-club
-            using Beehiiv's post-submit redirect settings (Form settings → Redirect URL).
+            On a successful signup the user is automatically sent to /maskless-club
+            (see BeehiivSignup's postMessage listener). For maximum reliability you
+            can ALSO set the Redirect URL to /maskless-club in Beehiiv (Form
+            settings → Redirect URL) so the redirect works even if the message
+            event ever changes.
           */}
           <div className="flex justify-center">
             <BeehiivSignup />
