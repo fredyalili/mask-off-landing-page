@@ -12,6 +12,6 @@ export const instagramHandle = "@maskoffgame"
 export const websiteUrl = "https://maskoffgame.com"
 export const websiteLabel = "maskoffgame.com"
 
-// Stripe payment link for the $1 Maskless Club.
+// Stripe payment link for the $1 Maskless Founder option.
 // Create a $1 Payment Link in your Stripe dashboard and paste the URL here.
 export const masklessClubUrl = "https://buy.stripe.com/test_00000000000000"

@@ -7,19 +7,19 @@ import { Footer } from "@/components/footer"
 import { masklessClubUrl } from "@/lib/config"
 
 export const metadata: Metadata = {
-  title: "The $1 Maskless Club — Mask Off",
+  title: "Become a $1 Maskless Founder — Mask Off",
   description:
     "Become a founding supporter of Mask Off for $1 before the Kickstarter campaign launches.",
 }
 
 const benefits = [
   "Founding supporter status",
-  "Help push Mask Off toward launch",
-  "Get the Founding Mask card free with any physical deck pledge during the Kickstarter campaign",
-  "During the campaign, this card will be available separately for $10",
+  "Help push Mask Off toward the 500-person launch goal",
+  "Get the Maskless Card free when you back any physical deck during the Kickstarter campaign",
+  "During the campaign, the Maskless Card will be available separately for $10",
 ]
 
-export default function MasklessClubPage() {
+export default function MasklessFounderPage() {
   return (
     <main className="min-h-screen">
       <Header />
@@ -32,12 +32,16 @@ export default function MasklessClubPage() {
                 <Sparkles className="h-7 w-7 text-accent-foreground" />
               </div>
 
-              <p className="text-lg font-semibold mb-2">You&apos;re on the launch list.</p>
-              <p className="text-muted-foreground mb-6">Want to become a founding supporter?</p>
-
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance mb-4">
-                Meet the $1 Maskless Club.
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance mb-3">
+                You&apos;re on the launch list.
               </h1>
+              <p className="text-muted-foreground text-lg mb-8">
+                Want to become a founding supporter?
+              </p>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-balance mb-4">
+                Become a $1 Maskless Founder
+              </h2>
               <p className="text-muted-foreground text-lg mb-8 text-balance">
                 Become an early supporter before the Kickstarter campaign launches.
               </p>
@@ -58,6 +62,10 @@ export default function MasklessClubPage() {
                   Join for $1
                 </Link>
               </Button>
+
+              <p className="text-muted-foreground/80 text-sm mt-6 text-balance">
+                Email signup is free. The $1 Maskless Founder option is optional.
+              </p>
             </div>
 
             <div className="mt-8 text-center">

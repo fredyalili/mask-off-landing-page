@@ -20,9 +20,10 @@ export function BeehiivSignup() {
     script.dataset.beehiivForm = "d1aa3e6e-fa4a-40b4-9120-20818346c198"
     containerRef.current.appendChild(script)
 
+    // Beehiiv post-submit redirect should be set to /maskless-founder.
     // Beehiiv embedded forms live inside an iframe and emit a postMessage
     // when a subscription succeeds. Listen for it and forward the user to the
-    // $1 Maskless Club page.
+    // $1 Maskless Founder page.
     function handleMessage(event: MessageEvent) {
       if (typeof event.origin !== "string" || !event.origin.includes("beehiiv")) {
         return
@@ -38,7 +39,7 @@ export function BeehiivSignup() {
         payload.includes("subscription") ||
         payload.includes("thank")
       ) {
-        router.push("/maskless-club")
+        router.push("/maskless-founder")
       }
     }
 
