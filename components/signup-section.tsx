@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react"
 import { BeehiivSignup } from "./beehiiv-signup"
 
 export function SignupSection() {
@@ -16,22 +15,13 @@ export function SignupSection() {
             Add your name and email to be first in line when the Kickstarter goes live.
           </p>
 
-          {/* Beehiiv embedded form (Name + Email) */}
+          {/*
+            Beehiiv embedded form (Name + Email).
+            NOTE: Configure Beehiiv to redirect successful signups to /maskless-club
+            using Beehiiv's post-submit redirect settings (Form settings → Redirect URL).
+          */}
           <div className="flex justify-center">
             <BeehiivSignup />
-          </div>
-
-          {/* Post-signup message */}
-          <div className="mt-12 rounded-2xl border border-border bg-card p-6 md:p-8">
-            <p className="text-lg font-semibold mb-1">You&apos;re on the launch list.</p>
-            <p className="text-muted-foreground mb-5">Want to become a founding supporter?</p>
-            <a
-              href="#maskless-club"
-              className="inline-flex items-center gap-2 text-accent font-medium hover:underline"
-            >
-              Meet the $1 Maskless Club
-              <ArrowRight className="h-4 w-4" />
-            </a>
           </div>
         </div>
       </div>
