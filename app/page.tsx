@@ -2,7 +2,6 @@ import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { LaunchGoal } from "@/components/launch-goal"
 import { SignupSection } from "@/components/signup-section"
-import { ClubTeaser } from "@/components/club-teaser"
 import { MediaSection } from "@/components/media-section"
 import { HowToPlay } from "@/components/how-to-play"
 import { Footer } from "@/components/footer"
@@ -14,7 +13,6 @@ export default function Home() {
       <Hero />
       <LaunchGoal />
       <SignupSection />
-      <ClubTeaser />
       <MediaSection />
       <HowToPlay />
       <Footer />

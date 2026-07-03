@@ -26,6 +26,11 @@ export function SignupSection() {
           <div className="flex justify-center">
             <BeehiivSignup />
           </div>
+
+          <p className="text-muted-foreground/80 text-sm mt-6 text-balance">
+            After you sign up, you&apos;ll have the option to join the $1 Maskless Club as a
+            founding supporter.
+          </p>
         </div>
       </div>
     </section>
