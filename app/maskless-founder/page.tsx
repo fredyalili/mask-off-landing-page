@@ -4,6 +4,7 @@ import { Check, Sparkles, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { MarkSignedUp } from "@/components/mark-signed-up"
 import { masklessClubUrl } from "@/lib/config"
 
 export const metadata: Metadata = {
@@ -13,15 +14,18 @@ export const metadata: Metadata = {
 }
 
 const benefits = [
-  "Founding supporter status",
-  "Help push Mask Off toward the 500-person launch goal",
-  "Get the Maskless Card free when you back any physical deck during the Kickstarter campaign",
-  "During the campaign, the Maskless Card will be available separately for $10",
+  "Early look at the Kickstarter page before it goes live",
+  "A direct line to give feedback and help shape the game",
+  "Invitations to Maskless game nights",
+  "A shout-out / fair appearance as a founding supporter",
+  "We'll come play at your game day if we're in town (mostly Miami)",
+  "Get the $10 Maskless Card free with any deck you buy during the campaign",
 ]
 
 export default function MasklessFounderPage() {
   return (
     <main className="min-h-screen">
+      <MarkSignedUp />
       <Header />
 
       <section className="pt-28 pb-24 md:pt-36 md:pb-32">

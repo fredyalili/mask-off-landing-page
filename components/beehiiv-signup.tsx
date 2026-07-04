@@ -39,6 +39,12 @@ export function BeehiivSignup() {
         payload.includes("subscription") ||
         payload.includes("thank")
       ) {
+        // Remember this visitor signed up so the launch counter shows their +1.
+        try {
+          window.localStorage.setItem("maskoff_signed_up", "true")
+        } catch {
+          // ignore storage access errors
+        }
         router.push("/maskless-founder")
       }
     }
