@@ -1,42 +1,39 @@
-import { Eye, Shuffle, Trophy, Heart } from "lucide-react"
+import { Shapes, Layers, Zap, Swords } from "lucide-react"
 
 const steps = [
   {
-    icon: Eye,
-    title: "Look",
-    description: "Study the masks laid face-up. Each one has a unique cultural identity."
+    icon: Shapes,
+    title: "Match masks",
+    description: "Play cards that match the mask on the table.",
   },
   {
-    icon: Shuffle,
-    title: "Match",
-    description: "Flip cards and find matching pairs. Use your memory wisely."
+    icon: Layers,
+    title: "Get rid of your cards",
+    description: "Empty your hand before anyone else to win.",
   },
   {
-    icon: Trophy,
-    title: "Reveal",
-    description: "Each mask has special powers. Strategic play wins the game."
+    icon: Zap,
+    title: "Use power masks",
+    description: "Special masks change the rules and shift momentum.",
   },
   {
-    icon: Heart,
-    title: "Connect",
-    description: "Learn about masks from cultures around the world as you play."
-  }
+    icon: Swords,
+    title: "React when the table turns",
+    description: "Stay sharp — the game can turn against you fast.",
+  },
 ]
 
 export function HowToPlay() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-24 md:py-32 bg-secondary/40 border-y border-border">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 max-w-2xl mx-auto">
           <p className="text-accent font-medium text-sm uppercase tracking-widest mb-4">
-            How it works
+            How it plays
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
             Easy to learn. Hard to stay hidden.
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Mask Off is a fast matching game for 2–7 players. Learn it in under a minute, play in 5–10 minutes, and discover how quickly a simple game can become personal.
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
